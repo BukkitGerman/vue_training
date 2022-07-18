@@ -23,6 +23,7 @@ export default {
       if(this.label === "")
         return;
       this.$emit('todo-added', this.label)
+      this.label = "";
     }
   },
   data() {

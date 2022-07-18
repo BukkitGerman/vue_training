@@ -2,8 +2,8 @@
   <div id="app">
     <h1>To-DO List</h1>
     <to-do-form @todo-added="addToDo"></to-do-form>
-    <ul>
-      <li v-for="item in ToDoItems" :key="item.id">
+    <ul class="list-group w-50 row justify-content-center mx-auto mt-3">
+      <li class="list-group-item" v-for="item in ToDoItems" :key="item.id">
         <to-do-item :label="item.label" :done="item.done" :id="item.id"></to-do-item>
       </li>
     </ul>
