@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="onSubmit">
+  <form @submit.prevent="onSubmit" @keydown.enter="onSubmit">
     <label for="new-todo-input">
       What needs to be done?
     </label>
